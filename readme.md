@@ -8,7 +8,7 @@
 	- Change this line: `cd("/projects/template")` to point at the directory of your project.
 	- Change this line: `DATP = "template.p64/"` as you did for step 2.
 
-If you would like to use definitions for Picotron, you can either put them in `C:\lualib\picotron`, or you can edit settings.json to point to the directory of your choice. I personally recommend cloning [Rayquaza01's definition files](https://github.com/Rayquaza01/picotron-definitions).
+If you're using Visual Studio Code and would like to use definitions for Picotron, you can either put them in `C:\lualib\picotron`, or you can edit settings.json to point to the directory of your choice. I personally recommend cloning [Rayquaza01's definition files](https://github.com/Rayquaza01/picotron-definitions).
 
 ## Important stuff
 
@@ -19,9 +19,9 @@ Whenever you want to refer to a file that lives in the cartridge, use `DATP..` a
 ## Trivia
 
 This template comes with:
-- Kira's Error Explorer, because I find it invaluable, since as of 0.2.0d, Picotron's error handling is garbage.
-- Elgopher's `require` function, to work around how the lua language server does not recognize Picotron's `include` function. It's also just nicer for dependency management than `include`.
+- [Kira's Error Explorer](https://www.lexaloffle.com/bbs/?pid=147383#p), because I find it invaluable, since as of 0.2.0d, Picotron's error handling is garbage.
+- [Elgopher's `require` function](https://www.lexaloffle.com/bbs/?pid=143480#p), to work around how the lua language server does not recognize Picotron's `include` function. It's also just nicer for dependency management than `include`.
 
 With thanks to both of them.
 
-The ruler setting in settings.json indicates where the horizontal boundary of the `code.p64` app is when using its monospace font, in case that's something you care about.
+The ruler setting in `.vscode/settings.json` indicates where the horizontal boundary of the `code.p64` app is when using its monospace font, in case that's something you care about.
