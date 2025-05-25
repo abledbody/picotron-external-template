@@ -14,7 +14,7 @@ If you're using Visual Studio Code and would like to use definitions for Picotro
 
 The main script is `src/game.lua`. All scripts go into `src/` so that they are unaffected by Picotron's metadata management, and can live outside of `ram/cart` so that iterating on them does not require reloading the cartridge. When you are ready to distribute the cartridge, all you need to do is make sure there is a copy of your `src` directory at the root of the cartridge.
 
-Whenever you want to refer to a file that lives in the cartridge, use `DATP..` as a prefix, such as `fetch(DATP.."0.gfx)`. This is because the working directory is different depending on where your `src` directory is. If `src` is at the root of the cartridge, the working directory will be `ram/cart`. Otherwise, it will be whatever you set it to in `main.lua`. `DATP` compensates for this by always pointing to the cartridge root.
+Whenever you want to refer to a file that lives in the cartridge, use `DATP..` as a prefix, such as `fetch(DATP.."gfx/0.gfx")`. This is because the working directory is different depending on where your `src` directory is. If `src` is at the root of the cartridge, the working directory will be `ram/cart`. Otherwise, it will be whatever you set it to in `main.lua`. `DATP` compensates for this by always pointing to the cartridge root.
 
 ## Trivia
 
