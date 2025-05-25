@@ -1,4 +1,4 @@
-include"require.lua"
+include"src/require.lua"
 
 -------------------------------------Dependencies--------------------------------------
 
@@ -29,4 +29,4 @@ function _draw()
 
 end
 
-include"error_explorer.lua"
+include"src/error_explorer.lua"
