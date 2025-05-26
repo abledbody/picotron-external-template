@@ -18,6 +18,8 @@ Whenever you want to refer to a file that lives in the cartridge, use `DATP..` a
 
 ## Trivia
 
+This template is designed to be used with Sumneko's Lua language server extension for VSCode, and the [Lua Comments And Type System (LuaCATS) annotations](https://luals.github.io/wiki/annotations/) it provides.
+
 This template comes with:
 - [Kira's Error Explorer](https://www.lexaloffle.com/bbs/?pid=147383#p), because I find it invaluable, since as of 0.2.0d, Picotron's error handling is garbage.
 - [Elgopher's `require` function](https://www.lexaloffle.com/bbs/?pid=143480#p), to work around how the lua language server does not recognize Picotron's `include` function. It's also just nicer for dependency management than `include`.
