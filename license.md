@@ -1,0 +1,1 @@
+Permission is granted to anyone obtaining a copy of this template to use, modify, sell, sublicense, and distribute without restriction or attribution, with the exceptions outlined in the third party MIT license located in `src/error_explorer.lua`.
