@@ -1,24 +1,25 @@
-include"src/require.lua"
+include "src/require.lua"
 
 -------------------------------------Dependencies--------------------------------------
 
 
 
---------------------------------------Game State---------------------------------------
+---------------------------------------App State---------------------------------------
 
-local game --- @type GameState
+local state --- @type AppState
 
----@return GameState
-local function new_game()
-	--- @class GameState
-	local gameState = {}
-	return gameState
+---@return AppState
+local function new_app_state()
+	--- @class AppState
+	---@diagnostic disable-next-line: redefined-local
+	local state = {}
+	return state
 end
 
 ----------------------------------Picotron Callbacks-----------------------------------
 
 function _init()
-	game = new_game()
+	state = new_app_state()
 end
 
 function _update()
@@ -29,4 +30,4 @@ function _draw()
 
 end
 
-include"src/error_explorer.lua"
+include "src/error_explorer.lua"
