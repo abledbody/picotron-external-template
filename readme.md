@@ -8,7 +8,7 @@
 	- Change this line: `cd("/projects/template")` to point at the directory of your project, keeping the leading slash.
 	- Change this line: `DATP = "template.p64/"` to match the name of the cartridge, keeping the trailing slash.
 
-If you're using Visual Studio Code and would like to use LuaCATS definitions for Picotron, you can either put them in `C:\lualib\picotron-definitions`, or you can edit `settings.json` to point to the directory of your choice. I personally recommend cloning [Rayquaza01's definition files](https://github.com/Rayquaza01/picotron-definitions), but bear in mind that at time of writing, there are no fully complete and accurate definitions for Picotron, and Picotron itself is still in active development, so you may occasionally see warnings for things that are actually valid in Picotron.
+If you're using Visual Studio Code and would like to use LuaCATS definitions for Picotron, you can either put them in `C:\lualib\picotron-definitions`, or you can edit `settings.json` to point to the directory of your choice. I personally recommend cloning [My fork of Rayquaza01's definition files](https://github.com/abledbody/picotron-definitions), but bear in mind that at time of writing, there are no fully complete and accurate definitions for Picotron, and Picotron itself is still in active development, so you may occasionally see warnings for things that are actually valid in Picotron.
 
 ## Important stuff
 
