@@ -8,7 +8,9 @@
 	- Change this line: `cd("/projects/template")` to point at the directory of your project, keeping the leading slash.
 	- Change this line: `DATP = "template.p64/"` to match the name of the cartridge, keeping the trailing slash.
 
-If you're using Visual Studio Code and would like to use LuaCATS definitions for Picotron, you can either put them in `C:\lualib\picotron-definitions`, or you can edit `settings.json` to point to the directory of your choice. I personally recommend cloning [My fork of Rayquaza01's definition files](https://github.com/abledbody/picotron-definitions), but bear in mind that at time of writing, there are no fully complete and accurate definitions for Picotron, and Picotron itself is still in active development, so you may occasionally see warnings for things that are actually valid in Picotron.
+If you're using Visual Studio Code and would like to use LuaCATS definitions for Picotron, I personally recommend cloning [My fork of Rayquaza01's definition files](https://github.com/abledbody/picotron-definitions), but bear in mind that at time of writing, there are no fully complete and accurate definitions for Picotron, and Picotron itself is still in active development, so you may occasionally see warnings for things that are actually valid in Picotron.
+
+To use these definitions, edit your VSCode user settings, and set `workspace.library` to the directory where you've put the definitions. You could instead edit the workspace settings, but this will force a specific directory structure, which will likely be incompatible with other operating systems. If you work with Lua in other contexts and don't want this setting to interfere with them, you may want to make a [VSCode profile](https://code.visualstudio.com/docs/configure/profiles) specifically for working with Picotron.
 
 ## Important stuff
 

@@ -1,7 +1,4 @@
 {
-	"workspace.library": [
-		"C:\\lualib\\picotron-definitions"
-	],
 	"runtime.nonstandardSymbol": [
 		"!=",
 		"+=",
