@@ -2,14 +2,8 @@
 DATP = ""
 if not fstat"src/main.lua" then
 	local loc = fetch("loc.txt")
-	if not loc then
-		print("Please run the loc.lua file to generate a loc.txt")
-		stop()
-		return
-	end
-	
-	if not fstat(loc .. "/src/main.lua") then
-		print("loc.txt does not point to a valid cart. Please run the loc.lua file to generate a new one.")
+	if not loc or not fstat(loc .. "/src/main.lua") then
+		print("If this cart is loaded in a development context, please run loc.lua to generate a loc.txt file.\nLoad the cart again once you've done so.\nIf this is a standalone cart, a mistake has been made, and the src directory is missing.")
 		stop()
 		return
 	end
